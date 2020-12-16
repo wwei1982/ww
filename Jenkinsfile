@@ -2,6 +2,10 @@ pipeline {
   agent any
   stages {
     stage('Query Customer') {
+      agent any
+      environment {
+        name = 'zhangsan'
+      }
       steps {
         echo '1234567'
       }
@@ -9,7 +13,7 @@ pipeline {
 
     stage('Query card num') {
       steps {
-        echo 'Wangwei'
+        echo '$name'
       }
     }
 
