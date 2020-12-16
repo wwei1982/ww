@@ -13,7 +13,7 @@ pipeline {
 
     stage('Query card num') {
       steps {
-        echo '$name'
+        echo '%name%'
       }
     }
 
