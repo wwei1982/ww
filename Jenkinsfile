@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('查询用户信息') {
+    stage('Query Customer') {
       steps {
         echo '王巍'
       }
     }
-    stage('查询用户信息') {
+    stage('Query card num') {
       steps {
         echo '王巍'
       }
