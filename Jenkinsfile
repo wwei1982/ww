@@ -12,6 +12,7 @@ pipeline {
     }
 
     stage('Query card num') {
+      agent any
       steps {
         echo '%name%'
       }
